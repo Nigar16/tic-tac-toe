@@ -31,7 +31,7 @@ function Table() {
     for (let i = 0; i < 3; i++) {
         tr += `<tr>`;
         for (let j = 0; j < 3; j++) {
-            tr += `<td id="${i+j}" onclick="Click(${i},${j})"> ${array[i][j] == undefined ? ' ' : array[i][j]}  </td>`;
+            tr += `<td  onclick="Click(${i},${j})"> ${array[i][j] == undefined ? ' ' : array[i][j]}  </td>`;
         }
         tr += `</tr>`;
     }
