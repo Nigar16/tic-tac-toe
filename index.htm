@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic tac toe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+        :root {
+            --press:'Press Start 2P', cursive;
+            --margarine:'Margarine', cursive;
+       } 
+        body{
+           position: relative;
+        }
+
+        h1{
+            text-align: center;
+            font:700 25px var(--press);
+            color:seagreen;
+        }
+        table{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        td {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font:700 30px var(--margarine);
+        }
+
+        #span{
+            display: flex;
+            justify-content: center;
+        }
+        span{
+            margin-top:40px;
+            padding:0 40px;
+            font:700 25px var(--margarine);
+            }
+
+    </style>
+</head>
+
+<body>
+<h1>  TIC TAC TOE</h1>
+
+    <table border="1" cellspacing="0" id="tbl"></table>
+
+    <div id="span">
+        <span id="p1" style="color:blue"></span>
+        <span id="p2" style="color:red"></span>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+
+</html>
